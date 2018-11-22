@@ -1,0 +1,56 @@
+{
+    "breakfast":
+    [
+        {
+            "type": "Café americano",
+            "price": 5
+        },
+        {
+            "type": "Café con leche",
+            "price": 7
+        },
+        {
+            "type": "Emparedado de jamón con queso",
+            "price": 10
+        },
+        {
+            "type": "Jugo natural",
+            "price": 7
+        }
+    ],
+    "meal":
+    [
+        {
+            "type": "Hamburgesa simple",
+            "price": 10
+        },
+        {
+            "type": "Hamburgesa doble",
+            "price": 15
+        },
+        {
+            "type": "Papas fritas",
+            "price": 5
+        },
+        {
+            "type": "Aros de cebolla",
+            "price": 5
+        },
+        {
+            "type": "Agua 500ml",
+            "price": 5
+        },
+        {
+            "type": "Agua 750ml",
+            "price": 8
+        },
+        {
+            "type": "Refresco 500ml",
+            "price": 8
+        },
+        {
+            "type": "Refresco 750ml",
+            "price": 10
+        }
+    ]
+}
