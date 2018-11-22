@@ -1,0 +1,10 @@
+-Mongodb
+-Express
+-Node
+-Axios
+-Routes
+-Api
+-Modelos
+-Postman
+-Get, post
+-Heroku
