@@ -1,17 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-// export const getOrders = () => dispatch => {
-//     dispatch();
-//     axios.get('/api/orders')
-//     .then(res => dispatch(
-//         {
-//             type: 
-//         }
-//     ))
-// }
-
-
 export default class ButtonSendOrder extends Component{
     constructor(props){
         super(props);

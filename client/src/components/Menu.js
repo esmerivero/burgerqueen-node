@@ -41,7 +41,7 @@ export default class Menu extends Component{
             <Navbar />
                 <div className="content row">
                     <SectionMenu breakfasMenu={this.state.breakfast} mealMenu={this.state.meal} getOrder={this.handleGetOrder}/>
-                    <SectionOrder order={this.state.order} newTotal={this.handleNewTotal.bind(this)}/>
+                    <SectionOrder order={this.state.order} newTotal={this.handleNewTotal}/>
                 </div>
             </div>
         );
