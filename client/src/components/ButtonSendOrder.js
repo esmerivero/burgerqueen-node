@@ -30,6 +30,7 @@ export default class ButtonSendOrder extends Component{
         // console.log(this.props.newTotal());
         const newTotal = this.props.newTotal();
 
+        // hacer cambios
         const obj = {
             name: 'ejemplo numero 3',
             status: 'Pending',
