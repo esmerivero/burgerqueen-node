@@ -37,7 +37,7 @@ export default class SectionOrder extends Component{
                         <div className="card-body">
                             <this.handlePrintOrder />
                         </div>
-                        <ButtonSendOrder order={this.props.order} />
+                        <ButtonSendOrder order={this.props.order} newTotal={this.props.newTotal}/>
                     </div>
             </section>
         );

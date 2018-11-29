@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import axios from ('axios');
+import axios from 'axios';
 
 // export const getOrders = () => dispatch => {
 //     dispatch();
@@ -12,7 +12,7 @@ import React, { Component } from 'react';
 // }
 
 
-export default class ButtonLogout extends Component{
+export default class ButtonSendOrder extends Component{
     constructor(props){
         super(props);
 
@@ -25,19 +25,26 @@ export default class ButtonLogout extends Component{
         };
     }
 
-    
-
     handleSendOrder(){
-        let total = 0 ;
-        let getObjectOrder = this.props.order.map((item) => {
-            total = parseInt(total) + parseInt(item.price);
-            return (this.setState({total:total}));
-         });
-        console.log(this.state.total);
-        
-        return getObjectOrder;
-        // console.log(this.props.order);
+        // this.props.newTotal();
+        // console.log(this.props.newTotal());
+        const newTotal = this.props.newTotal();
+
+        const obj = {
+            name: 'ejemplo numero 3',
+            status: 'Pending',
+            total: newTotal
+          };
+          axios.post(('/api/orders'), obj)
+              .then(res => console.log(res.data));
+          
+          this.setState({
+            name: '',
+            status: '',
+            total: 0
+          })
     }
+
     render(){
         return(
             <button type="button" className="btn btn-warning justify-content-center" onClick={this.handleSendOrder}>Enviar a cocina</button>
